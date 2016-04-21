@@ -1,0 +1,28 @@
+
+<div id="page-container" class="container-fluid no-gutter">
+    <div id="bg--prev" class="test left-section" style="width: 300px; float: left;">
+        <div class="brand-logo-container">
+            <a href="#">
+                <img src="/img/brand-logo.png" class="center-block" height="150px" style="margin-top: 50px;"/>
+            </a>
+        </div>
+
+        <div class="section-description">
+            {{ pager.content }}
+        </div>
+    </div>
+    <!-- Controllers-->
+    <div class="right-section">
+        <div id="image-container">
+            <ul id="imgSlider">
+                {% for pager in site.sectionPage %}
+                <li class="product-item" data-name="{{ pager.rank }}" data-description=" {{ pager.content }} ">
+                    <img class="product-image img-responsive center-block owl-lazy" src="{{ pager.image }}" >
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
