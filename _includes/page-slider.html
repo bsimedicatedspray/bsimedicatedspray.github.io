@@ -1,6 +1,19 @@
 
 <div id="page-container" class="container-fluid no-gutter">
-    <div id="bg--prev" class="test left-section" style="width: 300px; float: left;">
+    {% assign testTest = false %}
+    {% for pager in site.sectionPage %}
+
+        {% if pager.test contains "true" %}
+            {% assign testTest = test %}
+            {% break %}
+        {% endif %}
+
+        {% if testTest %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    <div id="bg-color" class="test left-section" style="width: 300px; float: left; background-color: {{ pager.color }}">
+
         <div class="brand-logo-container">
             <a href="#">
                 <img src="/img/brand-logo.png" class="center-block" height="150px" style="margin-top: 50px;"/>
@@ -11,17 +24,29 @@
             {{ pager.content }}
         </div>
     </div>
-    <!-- Controllers-->
+
     <div class="right-section">
-        <div id="image-container">
-            <ul id="imgSlider">
-                {% for pager in site.sectionPage %}
-                <li class="product-item" data-name="{{ pager.rank }}" data-description=" {{ pager.content }} ">
-                    <img class="product-image img-responsive center-block owl-lazy" src="{{ pager.image }}" >
+
+        <ul id="slider">
+            {% assign testTest = false %}
+            {% for pager in site.sectionPage %}
+                {% if pager.test contains "true"%}
+                    {% assign first = true %}
+                    {% assign testTest = true %}
+                {% endif %}
+            {% if testTest == true  %}
+                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}">
+                    <div class="image-container">
+                        <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                        <p data-description="{{ pager.content }}"></p>
+                    </div>
                 </li>
-                {% endfor %}
-            </ul>
-        </div>
+                {% assign testTest = false %}
+            {% endif %}
+            {% endfor %}
+
+        </ul>
+
     </div>
 </div>
 

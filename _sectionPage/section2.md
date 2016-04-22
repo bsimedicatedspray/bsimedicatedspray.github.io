@@ -1,11 +1,10 @@
 ---
-
+test: "true"
 rank: 2
+color: '#2466ab'
 background-color: '#2466ab'
-image: '/img/spray-bottle.png'
-
-
+image: '/img/character/runner.png'
 ---
 
-<h2>An instant pain relief for your muscle pains</h2>
-<h4>Buy now for P388.00 for 64 ml. Available at Mercury Drug & South Star Drug</h4>
+<h3>How it Works?</h3>
+<h5>Just a few sprays and you get immediate relief without the need to massage the affectedf area.</h5>

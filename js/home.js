@@ -4,12 +4,28 @@ bsi.init = function() {
     //bsi.rippleEffect();
 };
 
+
+
+//(function(){
+//
+//    $(".controller").click(function(){
+//        id = $(this).attr("id");
+//
+//        $(".controller-container").find(".is_current").removeClass("is_current");
+//        $(this).addClass("is_current");
+//        $(".card").attr('class', 'card card--' + id);
+//        $("html").attr('class', 'bg--' + id);
+//
+//    });
+//
+//})();
+
+
 bsi.initImgSlider = function() {
-    var owl = $('#imgSlider').owlCarousel({
-        lazyLoad:true,
-        loop:true,
-        autoPlay: true,
-        mouseDrag:false,
+    var owl = $('#slider').owlCarousel({
+        lazyLoad: true,
+        autoPlay: false,
+        mouseDrag:true,
         touchDrag: true,
         responsive: true,
         items:1,
@@ -17,20 +33,37 @@ bsi.initImgSlider = function() {
         navText: [
             '<img class="img-responsive" src="/img/arrow/left-arrow.png"/>',
             '<img class="img-responsive" src="/img/arrow/right-arrow.png"/>'
-        ]
+        ],
+        animateOut: nextslide,
+        animateIn: previousslide
     });
+
+    // Other Slides
+    var pageContainer = $('#page-container .right-section #slider .owl-stage-outer .owl-stage .owl-item .item');
+    var pageImage = $('#page-container .right-section #slider .owl-stage-outer .owl-stage .owl-item .item .image-container .page-image');
+
+
+    pageImage.addClass('animated fadeIn');
+
+    function previousslide() {
+        $(".owl-item.active .item").addClass('animated slideInUp');
+        pageImage.addClass('animated fadeIn');
+    }
+    function nextslide() {
+        $(".owl-item.active .item").removeClass('animated slideInUp');
+        pageImage.removeClass('animated fadeIn');
+    }
+
     owl.on('change.owl.carousel',function(property){
         var current = property.item.index;
-        var title = $(property.target).find(".owl-item").eq(current).find('li').data('name');
-        var description = $(property.target).find(".owl-item").eq(current).find('li').data('description');
+        var rank = $(property.target).find(".owl-item").eq(current).find('li').data('rank');
+        var color = $(property.target).find(".owl-item").eq(current).find('li').data('color');
+        var description = $(property.target).find(".owl-item").eq(current).find('p').data('description');
 
-        $(".best-seller-title").fadeOut(function() {
-            $(this).text(title).fadeIn();
-            $(".best-seller-url").attr("href", url);
-        });
+        $("#bg-color").css("background-color",color);
 
         $(".section-description").fadeOut(function() {
-            $(this).text(description).fadeIn();
+            $(this).html(description).fadeIn();
         });
     });
 };
