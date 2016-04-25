@@ -33,26 +33,14 @@ bsi.initImgSlider = function() {
         navText: [
             '<img class="img-responsive" src="/img/arrow/left-arrow.png"/>',
             '<img class="img-responsive" src="/img/arrow/right-arrow.png"/>'
-        ]
-        //animateOut: nextslide,
-        //animateIn: previousslide
+        ],
+        smartSpeed: 1000
     });
 
     // Other Slides
-    var pageContainer = $('#page-container .right-section #slider .owl-stage-outer .owl-stage .owl-item .item');
     var pageImage = $('#page-container .right-section #slider .owl-stage-outer .owl-stage .owl-item .item .image-container .page-image');
 
-
-    pageImage.addClass('animated fadeIn');
-
-    function previousslide() {
-        $(".owl-item.active .item").addClass('animated slideInUp');
-        pageImage.addClass('animated fadeIn');
-    }
-    function nextslide() {
-        $(".owl-item.active .item").removeClass('animated slideInUp');
-        pageImage.removeClass('animated fadeIn');
-    }
+    //pageImage.addClass('animated fadeIn');
 
     owl.on('changed.owl.carousel',function(property){
         var current = property.item.index;
@@ -65,6 +53,7 @@ bsi.initImgSlider = function() {
         $(".section-description").fadeOut(function() {
             $(this).html(description).fadeIn();
         });
+
     });
 };
 

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300)
+
 .no-gutter
   padding-left: 0
   padding-right: 0
@@ -9,16 +9,24 @@
   background-color: #2466ab
 
 body
-  font-family: 'Roboto', sans-serif
+  font-family: 'Gotham-Light', sans-serif
 
 #page-container
   .left-section
     height: 100vh
     position: relative
     .section-description
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
       color: white
       width: 90%
-      margin: 0 auto
+      margin: -200px auto 0
+      h3
+        line-height: 30px
+        margin-bottom: 20px
+      p
+        line-height: 30px
   .right-section
     height: 100vh
     left: 0
