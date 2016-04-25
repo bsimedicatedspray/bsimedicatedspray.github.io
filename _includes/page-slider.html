@@ -1,6 +1,6 @@
 
 <div id="page-container" class="container-fluid no-gutter">
-    <div id="bg-color" class="test left-section" style="width: 300px; float: left; background-color: {{ pager.color }};">
+    <div id="bg-color" class="test left-section" style="width: 300px; float: left; background-color: {{ pager.color }}; background-image: {{ pager.background-image }}">
 
         <div class="brand-logo-container">
             <a href="#">
@@ -16,7 +16,7 @@
     <div class="right-section">
         <ul id="slider">
             {% for pager in site.sectionPage %}
-                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}">
+                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }}); background-size: cover; background-position: center;">
                     <div class="image-container">
                         <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
                         <p data-description="{{ pager.content }}"></p>
