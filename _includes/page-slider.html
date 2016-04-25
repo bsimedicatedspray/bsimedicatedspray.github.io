@@ -1,18 +1,6 @@
 
 <div id="page-container" class="container-fluid no-gutter">
-    {% assign testTest = false %}
-    {% for pager in site.sectionPage %}
-
-        {% if pager.test contains "true" %}
-            {% assign testTest = test %}
-            {% break %}
-        {% endif %}
-
-        {% if testTest %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
-    <div id="bg-color" class="test left-section" style="width: 300px; float: left; background-color: {{ pager.color }}">
+    <div id="bg-color" class="test left-section" style="width: 300px; float: left; background-color: {{ pager.color }};">
 
         <div class="brand-logo-container">
             <a href="#">
@@ -21,32 +9,19 @@
         </div>
 
         <div class="section-description">
-            {{ pager.content }}
+            {{ site.sectionPage[0].content }}
         </div>
     </div>
 
     <div class="right-section">
-
         <ul id="slider">
-            {% assign testTest = false %}
-            {% for pager in site.sectionPage %}
-                {% if pager.test contains "true"%}
-                    {% assign first = true %}
-                    {% assign testTest = true %}
-                {% endif %}
-            {% if testTest == true  %}
-                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}">
-                    <div class="image-container">
-                        <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                        <p data-description="{{ pager.content }}"></p>
-                    </div>
-                </li>
-                {% assign testTest = false %}
-            {% endif %}
-            {% endfor %}
-
+            <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" data-colors='[{% if pager.test == "true" %}{% unless first %},{% endunless %}{% assign first = false %}{% endif %}]'>
+                <div class="image-container">
+                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                    <p data-description="{{ pager.content }}"></p>
+                </div>
+            </li>
         </ul>
-
     </div>
 </div>
 
