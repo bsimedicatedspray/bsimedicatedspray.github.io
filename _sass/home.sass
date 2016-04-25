@@ -32,7 +32,7 @@ body
     left: 0
     position: relative
     overflow: hidden
-    #slider
+    .slider
       height: inherit
       padding-left: 0
       list-style: none
@@ -49,6 +49,10 @@ body
                 position: relative
                 top: 50%
                 transform: translateY(-50%)
+                -webkit-transform: translateY(-50%)
+                -moz-transform: translateY(-50%)
+                -o-transform: translateY(-50%)
+                -ms-transform: translateY(-50%)
                 .page-image
                   height: 600px
                   width: auto
@@ -72,7 +76,7 @@ body
 @media (min-width: 1441px)
   #page-container
     .right-section
-      #slider
+      .slider
         .owl-stage-outer
           .owl-stage
             .owl-item

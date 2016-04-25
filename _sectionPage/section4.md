@@ -1,5 +1,5 @@
 ---
-rank: 3
+rank: 4
 color: '#2466ab'
 background-image: '/img/background-char/section-4.jpg'
 background-medium: '/img/background-char/medium-size/section-4.jpg'

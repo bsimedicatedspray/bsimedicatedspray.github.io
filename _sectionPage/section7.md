@@ -1,5 +1,5 @@
 ---
-rank: 3
+rank: 7
 color: '#ea1639'
 background-image: '/img/background-char/section-7.jpg'
 background-medium: '/img/background-char/medium-size/section-7.jpg'

@@ -4,7 +4,7 @@ bsi.init = function() {
 };
 
 bsi.initImgSlider = function() {
-    var owl = $('#slider').owlCarousel({
+    var owl = $('.slider').owlCarousel({
         lazyLoad: true,
         autoPlay: false,
         mouseDrag:false,
@@ -20,7 +20,7 @@ bsi.initImgSlider = function() {
     });
 
     // Other Slides
-    var pageImage = $('#page-container .right-section #slider .owl-stage-outer .owl-stage .owl-item .item .image-container .page-image');
+    var pageImage = $('#page-container .right-section .slider .owl-stage-outer .owl-stage .owl-item .item .image-container .page-image');
 
     //pageImage.addClass('animated fadeIn');
 

@@ -14,9 +14,19 @@
     </div>
 
     <div class="right-section">
-        <ul id="slider">
+        <ul class="slider visible-lg">
             {% for pager in site.sectionPage %}
                 <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }}); background-size: cover; background-position: center;">
+                    <div class="image-container">
+                        <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                        <p data-description="{{ pager.content }}"></p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul class="slider visible-md">
+            {% for pager in site.sectionPage %}
+                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }}); background-size: cover; background-position: center;">
                     <div class="image-container">
                         <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
                         <p data-description="{{ pager.content }}"></p>
