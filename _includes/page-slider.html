@@ -15,12 +15,14 @@
 
     <div class="right-section">
         <ul id="slider">
-            <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" data-colors='[{% if pager.test == "true" %}{% unless first %},{% endunless %}{% assign first = false %}{% endif %}]'>
-                <div class="image-container">
-                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                    <p data-description="{{ pager.content }}"></p>
-                </div>
-            </li>
+            {% for pager in site.sectionPage %}
+                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}">
+                    <div class="image-container">
+                        <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                        <p data-description="{{ pager.content }}"></p>
+                    </div>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </div>

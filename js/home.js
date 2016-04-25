@@ -33,9 +33,9 @@ bsi.initImgSlider = function() {
         navText: [
             '<img class="img-responsive" src="/img/arrow/left-arrow.png"/>',
             '<img class="img-responsive" src="/img/arrow/right-arrow.png"/>'
-        ],
-        animateOut: nextslide,
-        animateIn: previousslide
+        ]
+        //animateOut: nextslide,
+        //animateIn: previousslide
     });
 
     // Other Slides
@@ -54,7 +54,7 @@ bsi.initImgSlider = function() {
         pageImage.removeClass('animated fadeIn');
     }
 
-    owl.on('change.owl.carousel',function(property){
+    owl.on('changed.owl.carousel',function(property){
         var current = property.item.index;
         var rank = $(property.target).find(".owl-item").eq(current).find('li').data('rank');
         var color = $(property.target).find(".owl-item").eq(current).find('li').data('color');

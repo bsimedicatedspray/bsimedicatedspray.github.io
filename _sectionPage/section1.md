@@ -1,5 +1,4 @@
 ---
-test: "true"
 rank: 1
 color: '#2466ab'
 image: '/img/spray-bottle.png'

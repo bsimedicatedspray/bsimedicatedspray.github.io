@@ -1,5 +1,4 @@
 ---
-test: "true"
 rank: 3
 color: '#ea1639'
 background-color: '#2466ab'
