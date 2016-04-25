@@ -7,14 +7,14 @@ bsi.initImgSlider = function() {
     var owl = $('#slider').owlCarousel({
         lazyLoad: true,
         autoPlay: false,
-        mouseDrag:true,
+        mouseDrag:false,
         touchDrag: true,
         responsive: true,
         items:1,
         nav: true,
         navText: [
-            '<img class="img-responsive" src="/img/arrow/left-arrow.png"/>',
-            '<img class="img-responsive" src="/img/arrow/right-arrow.png"/>'
+            '<img class="img-responsive" src="/img/arrow/arrow-left-grey.png"/>',
+            '<img class="img-responsive" src="/img/arrow/arrow-right-grey.png"/>'
         ],
         smartSpeed: 1000
     });

@@ -50,7 +50,7 @@ body
                 top: 50%
                 transform: translateY(-50%)
                 .page-image
-                  height: 500px
+                  height: 600px
                   width: auto
 
 .owl-controls
@@ -67,6 +67,20 @@ body
       display: inline-block
       img
         height: 60px
+
+
+@media (min-width: 1441px)
+  #page-container
+    .right-section
+      #slider
+        .owl-stage-outer
+          .owl-stage
+            .owl-item
+              .item
+                .image-container
+                  .page-image
+                    height: 700px
+
 
 //Animation
 @keyframes fadeInUp
