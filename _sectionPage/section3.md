@@ -1,7 +1,7 @@
 ---
 rank: 3
 color: '#ea1639'
-background-image: '/img/background-char/section-3.jpg'
+background-image: '/img/background-char/section-3.png'
 
 ---
 
