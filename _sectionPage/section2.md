@@ -1,8 +1,8 @@
 ---
 rank: 2
 color: '#2466ab'
-background-image: '/img/background/runner-bg.png'
-image: '/img/character/runner.png'
+background-image: '/img/background-char/section-2.jpg'
+
 ---
 
 <h3>How it Works?</h3>

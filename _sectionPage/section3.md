@@ -1,10 +1,12 @@
 ---
 rank: 3
 color: '#ea1639'
-background-color: '#2466ab'
-image: '/img/spray-bottle.png'
+background-image: '/img/background-char/section-3.jpg'
 
 ---
 
-<h3>An instant pain relief for your muscle pains</h3>
-<p>Buy now for P388.00 for 64 ml. Available at Mercury Drug & South Star Drug</p>
+<h3>WHO USES IT?</h3>
+<h4>Runners</h4>
+<h4>Mountaineers</h4>
+<h4>Old People</h4>
+<h4>Professionals</h4>
