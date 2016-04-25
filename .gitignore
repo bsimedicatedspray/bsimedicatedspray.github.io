@@ -1,7 +1,7 @@
-#_site
-#.sass-cache
-#.idea
-#.jekyll-metadata
-#*.iml
-#Gemfile
-#Gemfile.lock
+_site
+.sass-cache
+.idea
+.jekyll-metadata
+*.iml
+Gemfile
+Gemfile.lock
