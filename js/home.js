@@ -9,14 +9,24 @@ bsi.initImgSlider = function() {
         autoPlay: false,
         mouseDrag:false,
         touchDrag: true,
-        responsive: true,
         items:1,
-        nav: true,
         navText: [
             '<img class="img-responsive" src="/img/arrow/arrow-left-grey.png"/>',
             '<img class="img-responsive" src="/img/arrow/arrow-right-grey.png"/>'
         ],
-        smartSpeed: 1000
+        smartSpeed: 1000,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                nav: false
+
+            },
+            // breakpoint from 480 up
+            992 : {
+                nav: true
+
+            }
+        }
     });
 
     // Other Slides
