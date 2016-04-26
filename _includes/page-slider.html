@@ -16,7 +16,7 @@
     <div class="right-section">
         <ul class="slider visible-lg">
             {% for pager in site.sectionPage %}
-                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }}); background-size: cover; background-position: center;">
+                <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});">
                     <div class="image-container">
                         <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
                         <p data-description="{{ pager.content }}"></p>
@@ -26,7 +26,7 @@
         </ul>
         <ul class="slider visible-md">
             {% for pager in site.sectionPage %}
-                <li class="item" data-rank="{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }}); background-size: cover; background-position: center;">
+                <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
                     <div class="image-container">
                         <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
                         <p data-description="{{ pager.content }}"></p>
