@@ -36,10 +36,15 @@ bsi.initImgSlider = function() {
         var description = $(property.target).find(".owl-item").eq(current).find('p').data('description');
 
         $("#bg-color").css("background-color",color);
+        $(".modal-content").css("background-color",color);
 
         $(".section-description").fadeOut(function() {
             $(this).html(description).fadeIn();
         });
+        $(".modal-content").fadeOut(function() {
+            $(this).html(description).fadeIn();
+        });
+
     });
 
 };
