@@ -1,18 +1,17 @@
 
 <div id="page-container" class="container-fluid no-gutter">
-    <div id="bg-color" class="test left-section" style="width: 300px; float: left; background-color: {{ pager.color }}; background-image: {{ pager.background-image }}">
-
+    <div id="bg-color" class="test left-section" style="background-color: {{ pager.color }};">
         <div class="brand-logo-container">
             <a href="#">
                 <img src="/img/brand-logo.png" class="center-block" height="150px" style="margin-top: 50px;"/>
             </a>
         </div>
 
-        <div class="section-description">
+        <div class="section-description hidden-md hidden-sm hidden-xs">
             {{ site.sectionPage[0].content }}
         </div>
         <div class="social-media"></div>
-        <footer>
+        <footer class="hidden-md hidden-sm hidden-xs">
             <div class="footer-container">
                 <span class="footer-text">2016 All Rights Reserved</span>
             </div>
@@ -30,7 +29,7 @@
             </li>
             {% endfor %}
         </ul>
-        <ul class="slider visible-md">
+        <ul class="slider visible-md visible-sm">
             {% for pager in site.sectionPage %}
             <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
                 <div class="image-container">

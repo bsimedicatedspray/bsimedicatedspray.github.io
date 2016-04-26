@@ -15,6 +15,8 @@ body
   .left-section
     height: 100vh
     position: relative
+    width: 300px
+    float: left
     .section-description
       position: relative
       top: 50%
@@ -94,6 +96,7 @@ footer
       display: block
       color: white
       padding: 10px 0
+
 @media (min-width: 1441px)
   #page-container
     .right-section
@@ -106,6 +109,18 @@ footer
                   .page-image
                     height: 700px
 
+@media (max-width: 991px)
+  #page-container
+    .left-section
+      width: 100%
+      height: auto
+      .brand-logo-container
+        img
+          margin: 15px auto
+          height: 100px
+    .right-section
+      float: left
+      width: 100%
 
 
 //Animation
