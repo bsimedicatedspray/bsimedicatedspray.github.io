@@ -29,12 +29,22 @@
             </li>
             {% endfor %}
         </ul>
-        <ul class="slider visible-md visible-sm">
+        <ul class="slider visible-md">
             {% for pager in site.sectionPage %}
             <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
                 <div class="image-container">
                     <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
                     <p data-description="{{ pager.content }}"></p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul class="slider visible-sm visible-xs">
+            {% for pager in site.sectionPage %}
+            <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
+                <div class="image-container">
+                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                    <p class="owl-lazy"> {{ pager.content }}</p>
                 </div>
             </li>
             {% endfor %}
