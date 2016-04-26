@@ -11,31 +11,33 @@
         <div class="section-description">
             {{ site.sectionPage[0].content }}
         </div>
-
+        <div class="social-media"></div>
         <footer>
-            <span class="footer-text">2016 All Rights Reserved</span>
+            <div class="footer-container">
+                <span class="footer-text">2016 All Rights Reserved</span>
+            </div>
         </footer>
     </div>
 
     <div class="right-section">
         <ul class="slider visible-lg">
             {% for pager in site.sectionPage %}
-                <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});">
-                    <div class="image-container">
-                        <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                        <p data-description="{{ pager.content }}"></p>
-                    </div>
-                </li>
+            <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});">
+                <div class="image-container">
+                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                    <p data-description="{{ pager.content }}"></p>
+                </div>
+            </li>
             {% endfor %}
         </ul>
         <ul class="slider visible-md">
             {% for pager in site.sectionPage %}
-                <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
-                    <div class="image-container">
-                        <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                        <p data-description="{{ pager.content }}"></p>
-                    </div>
-                </li>
+            <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
+                <div class="image-container">
+                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
+                    <p data-description="{{ pager.content }}"></p>
+                </div>
+            </li>
             {% endfor %}
         </ul>
     </div>

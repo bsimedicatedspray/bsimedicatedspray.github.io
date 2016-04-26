@@ -25,6 +25,10 @@ body
       h3
         line-height: 30px
         margin-bottom: 20px
+      span
+        display: block
+        font-size: 16px
+        text-transform: uppercase
       p
         line-height: 30px
   .right-section
@@ -84,10 +88,12 @@ footer
   margin: 0 auto
   left: 0
   right: 0
-  .footer-text
-    display: block
-    color: white
-    padding: 10px 0
+  .footer-container
+    position: relative
+    .footer-text
+      display: block
+      color: white
+      padding: 10px 0
 @media (min-width: 1441px)
   #page-container
     .right-section
