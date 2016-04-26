@@ -8,7 +8,7 @@ bsi.initImgSlider = function() {
     var owl = $('.slider').owlCarousel({
         lazyLoad: true,
         autoPlay: false,
-        mouseDrag:false,
+        mouseDrag:true,
         touchDrag: true,
         items:1,
         navText: [
