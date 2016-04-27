@@ -7,7 +7,7 @@ background-medium: '/img/background-char/medium-size/section-3.jpg'
 ---
 
 <h3>WHO USES IT?</h3>
-<h4>Runners</h4>
+<h4>Athletes</h4>
 <h4>Mountaineers</h4>
-<h4>Old People</h4>
+<h4>Senior People</h4>
 <h4>Professionals</h4>

@@ -7,4 +7,4 @@ background-medium: '/img/background-char/medium-size/section-2.jpg'
 ---
 
 <h3>How it Works?</h3>
-<p>Just a few sprays and you get immediate relief without the need to massage the affectedf area.</p>
+<p>Just a few sprays and you get immediate relief without the need to massage the affected area.</p>
