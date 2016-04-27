@@ -1,0 +1,106 @@
+/* FADE/SCALE EFFECT
+.btn-demo
+  position: absolute
+  bottom: 5%
+  right: 5%
+  z-index: 1
+  opacity: 0.9
+  &:hover, &:active, &:focus
+    opacity: 1
+  .btn-demo-image
+    height: 60px
+
+
+.modal.fade
+  .modal-dialog
+    position: absolute
+    top: 40%
+    left: 0
+    right: 0
+    opacity: 0
+    -webkit-transform: scale(0.1)
+    -ms-transform: scale(0.1)
+    -o-transform: scale(0.1)
+    transform: scale(0.1)
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+  &.in .modal-dialog
+    opacity: 1
+    -webkit-transform: scale(1)
+    -ms-transform: scale(1)
+    -o-transform: scale(1)
+    transform: scale(1)
+    -webkit-transform: translate3d(0%, 0, 0), translateY(-40%)
+    -ms-transform: translate3d(0%, 0, 0), translateY(-40%)
+    -o-transform: translate3d(0%, 0, 0), translateY(-40%)
+    transform: translate3d(0%, 0, 0), translateY(-40%)
+
+/* DIALOG CONTENT
+
+.modal-content
+  border: none
+  border-radius: 2px
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  padding: 8% 5%
+  background-color: #2466ab
+  h3
+    margin: 20px auto
+    color: white
+  h4
+    color: white
+  p
+    color: white
+
+
+/* DIALOG HEADER
+
+.modal-header
+  min-height: 16px
+  padding: 24px
+  border-bottom: none
+
+.modal-title
+  font-weight: 500
+  font-size: 21px
+
+/* DIALOG BODY
+
+.modal-body
+  padding: 0 24px
+  .lead
+    font-weight: 300
+    font-size: 16px
+    color: #757575
+  p:last-child, .lead:last-child
+    margin-bottom: 0
+
+/* DIALOG FOOTER
+
+.modal-footer
+  margin-top: 24px
+  padding: 8px 0
+  border-top: none
+  .btn
+    height: 36px
+    margin-right: 8px
+    padding: 8px 10px
+    border: none
+    border-radius: 0
+    text-transform: uppercase
+    font-weight: 500
+    color: #009688
+    background-color: #fff
+    &:focus
+      outline: none
+      box-shadow: none
+      color: #00796B
+    &:hover
+      color: #00796B
+    + .btn
+      margin-left: 0
+      &:last-child
+        margin-left: -4px
