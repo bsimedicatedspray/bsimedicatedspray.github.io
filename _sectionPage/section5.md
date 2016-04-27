@@ -3,6 +3,7 @@ rank: 5
 color: '#ea1639'
 background-image: '/img/background-char/section-5.jpg'
 background-medium: '/img/background-char/medium-size/section-5.jpg'
+background-small: '/img/background-char/small-size/section-5.png'
 
 ---
 

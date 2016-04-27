@@ -3,6 +3,7 @@ rank: 4
 color: '#2466ab'
 background-image: '/img/background-char/section-4.jpg'
 background-medium: '/img/background-char/medium-size/section-4.jpg'
+background-small: '/img/background-char/small-size/section-4.jpg'
 
 ---
 
