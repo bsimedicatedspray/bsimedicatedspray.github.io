@@ -57,9 +57,9 @@ body
               height: inherit
               background-color: #ea1639
               background-size: cover
-              &.section-5,&.section-6,&.section-7
+              &.section-5,&.section-7
                 background-position: right
-              &.section-1,&.section-2,&.section-3, &.section-4
+              &.section-1,&.section-2,&.section-3, &.section-4,&.section-6
                 background-position: center
 
 .close-container
@@ -136,14 +136,8 @@ footer
         img
           margin: 20px auto
           height: 60px
-    .right-section
-      .slider
-        .owl-stage-outer
-          .owl-stage
-            .owl-item
-              .item
-                &.section-3
-                  background-position: top center
+
+
 
 
 @media (max-width: $screen-xs-max)
@@ -163,6 +157,10 @@ footer
     .right-section
       .slider-small
         display: block
+                          
+  .modal.fade
+    .modal-dialog
+      top: 22%
 
 
 
