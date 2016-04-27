@@ -1,8 +1,9 @@
 ---
 rank: 3
 color: '#ea1639'
-background-image: '/img/background-char/section-3.png'
+background-image: '/img/background-char/section-3.jpg'
 background-medium: '/img/background-char/medium-size/section-3.jpg'
+background-small: '/img/background-char/small-size/section-3.jpg'
 
 ---
 
