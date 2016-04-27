@@ -33,7 +33,7 @@ bsi.initImgSlider = function() {
         var current = property.item.index;
         var rank = $(property.target).find(".owl-item").eq(current).find('li').data('rank');
         var color = $(property.target).find(".owl-item").eq(current).find('li').data('color');
-        var description = $(property.target).find(".owl-item").eq(current).find('p').data('description');
+        var description = $(property.target).find(".owl-item").eq(current).find('li').data('description');
 
         $("#bg-color").css("background-color",color);
         $(".modal-content").css("background-color",color);
@@ -41,7 +41,7 @@ bsi.initImgSlider = function() {
         $(".section-description").fadeOut(function() {
             $(this).html(description).fadeIn();
         });
-        $(".modal-content").fadeOut(function() {
+        $(".modal-text").fadeOut(function() {
             $(this).html(description).fadeIn();
         });
 

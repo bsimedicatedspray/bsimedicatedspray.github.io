@@ -21,55 +21,44 @@
     <div class="right-section">
         <ul class="slider visible-lg">
             {% for pager in site.sectionPage %}
-            <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});">
-                <div class="image-container">
-                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                    <p data-description="{{ pager.content }}"></p>
-                </div>
-            </li>
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
             {% endfor %}
         </ul>
-        <ul class="slider visible-md">
+
+        <ul class="slider slider-medium hidden-lg visible-md visible-sm visible-xs">
             {% for pager in site.sectionPage %}
-            <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
-                <div class="image-container">
-                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                    <p data-description="{{ pager.content }}"></p>
-                </div>
-            </li>
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});"></li>
             {% endfor %}
         </ul>
-        <ul class="slider hidden-lg hidden-md visible-sm visible-xs">
+
+        <ul class="slider slider-small hidden-lg hidden-md hidden-sm ">
             {% for pager in site.sectionPage %}
-            <li class="item section-{{ pager.rank }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});">
-                <div class="image-container">
-                    <img class="owl-lazy page-image img-responsive center-block" data-src="{{ pager.image }}" >
-                    <p data-description="{{ pager.content }}"></p>
-                </div>
-            </li>
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-small }});"></li>
             {% endfor %}
 
         </ul>
+
+
 
 
         <div class="container demo visible-md visible-sm visible-xs">
             <div class="text-center">
                 <a class="btn-demo" data-toggle="modal" data-target="#myModal-2">
-                   <img class="btn-demo-image" src="/img/modal-icon.png"/>
+                    <img class="btn-demo-image" src="/img/modal-icon.png"/>
                 </a>
             </div>
             <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <div class="modal-content" style="background-color: {{ pager.color }}">{{ site.sectionPage[0].content }}</div>
+                            <div class="modal-text" style="background-color: {{ pager.color }}">{{ site.sectionPage[0].content }}</div
                         </div>
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-dialog" data-dismiss="modal">Cancel</button>-->
-                            <!--<button type="button" class="btn btn-dialog">Ok</button>-->
-                        <!--</div>-->
+
                     </div>
-                    <!-- modal-content -->
+                    <div class="close-container">
+                        <span class="glyphicon glyphicon-remove" data-dismiss="modal"></span>
+                    </div>
+
                 </div>
                 <!-- modal-dialog -->
             </div>
