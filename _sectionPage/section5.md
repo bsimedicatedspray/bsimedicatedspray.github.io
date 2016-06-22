@@ -9,4 +9,4 @@ background-small: '/img/background-char/small-size/section-5.png'
 
 <h3>WHO USES IT?</h3>
 <span>Mountaineers</span>
-<p> It's a high mountain to climb and along the way you've experienced excruciating muscle pain, barely even able to move less finishing the trail. BSI Medicated Spray will make the pain go away and help you reach to the top.</p>
+<p>While you're climbing up a mountain, you suddenly experience excruciating muscle pain. You can barely move, much less finish your climb. BSI Medicated Spray will make the pain go away and heglp you reach the top.</p>

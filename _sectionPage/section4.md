@@ -9,4 +9,4 @@ background-small: '/img/background-char/small-size/section-4.jpg'
 
 <h3>WHO USES IT?</h3>
 <span>Athletes</span>
-<p>BSI Medicated Spray maybe used Before, During, and After any sport activity, making you always ready for another grand triumphant finish.</p>
+<p>BSI Medicated Spray may be used <b>before</b>, <b>during</b>, or after sports activities. Always making you ready for another grand triumphant finish. </p>
