@@ -4,7 +4,8 @@ color: '#2466ab'
 background-image: '/img/background-char/section-6.png'
 background-medium: '/img/background-char/medium-size/section-6.png'
 background-small: '/img/background-char/small-size/section-6.png'
-
+video-id: 171689505
+has-video: true
 ---
 
 <h3>WHO USES IT?</h3>

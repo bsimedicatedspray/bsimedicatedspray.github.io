@@ -10,6 +10,7 @@ bsi.initImgSlider = function() {
         autoPlay: false,
         mouseDrag:true,
         touchDrag: true,
+        video: true,
         items:1,
         navText: [
             '<img class="img-responsive" src="/img/arrow/arrow-left-grey.png"/>',
@@ -19,12 +20,14 @@ bsi.initImgSlider = function() {
         responsive : {
             // breakpoint from 0 up
             0 : {
-                nav: false
+                nav: false,
+                video: true
 
             },
             // breakpoint from 480 up
             992 : {
-                nav: true
+                nav: true,
+                video: true
 
             }
         }
@@ -44,6 +47,7 @@ bsi.initImgSlider = function() {
         $(".modal-text").fadeOut(function() {
             $(this).html(description).fadeIn();
         });
+
 
     });
 
