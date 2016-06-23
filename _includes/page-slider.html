@@ -24,7 +24,7 @@
             {% if pager.has-video == true %}
             <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
                 <div class="container video-container">
-                    <video class="video" controls style="height: auto; width: 100%;">
+                    <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
                         <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
                     </video>
                 </div>
@@ -39,7 +39,7 @@
             {% if pager.has-video == true %}
             <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
                 <div class="video-container">
-                    <video class="video" controls style="height: auto; width: 100%;">
+                    <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
                         <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
                     </video>
                 </div>
@@ -54,7 +54,7 @@
             {% if pager.has-video == true %}
             <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
                 <div class="container video-container">
-                    <video class="video" controls style="height: auto; width: 100%;">
+                    <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
                         <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
                     </video>
                 </div>

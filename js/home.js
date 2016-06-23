@@ -38,6 +38,10 @@ bsi.initImgSlider = function() {
         var color = $(property.target).find(".owl-item").eq(current).find('li').data('color');
         var description = $(property.target).find(".owl-item").eq(current).find('li').data('description');
 
+        $("#video-01")[0].pause();
+        $("#video-02")[0].pause();
+        $("#video-03")[0].pause();
+
         $("#bg-color").css("background-color",color);
         $(".modal-content").css("background-color",color);
 
