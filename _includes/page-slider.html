@@ -3,7 +3,7 @@
     <div id="bg-color" class="test left-section" style="background-color: {{ pager.color }};">
         <div class="brand-logo-container">
             <a href="#">
-                <img src="/img/brand-logo.png" class="center-block" height="125px"/>
+                <img src="/img/brand-logo-white.png" class="center-block" height="125px"/>
             </a>
         </div>
 
@@ -22,7 +22,7 @@
         <ul class="slider visible-lg">
             {% for pager in site.sectionPage %}
             {% if pager.has-video == true %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.video-bg }};">
                 <div class="container video-container">
                     <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
                         <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
