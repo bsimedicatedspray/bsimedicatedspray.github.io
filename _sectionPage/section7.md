@@ -5,7 +5,6 @@ background-image: '/img/background-char/section-7.jpg'
 background-medium: '/img/background-char/medium-size/section-7.jpg'
 background-small: '/img/background-char/small-size/section-7.jpg'
 video-id: "03"
-video-bg: "#2466ab"
 has-video: true
 ---
 
