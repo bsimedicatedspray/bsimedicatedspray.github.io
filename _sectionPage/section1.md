@@ -1,9 +1,9 @@
 ---
 rank: 1
 color: '#2466ab'
-background-image: '/img/background-char/section-1.png'
-background-medium: '/img/background-char/medium-size/section-1.png'
-background-small: '/img/background-char/small-size/section-1.png'
+background-image: '/img/background-char/section-1.jpg'
+background-medium: '/img/background-char/medium-size/section-1.jpg'
+background-small: '/img/background-char/small-size/section-1.jpg'
 
 ---
 <h3>An instant pain relief for your muscle pains </h3>
