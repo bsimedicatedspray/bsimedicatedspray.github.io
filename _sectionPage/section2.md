@@ -7,4 +7,4 @@ background-small: '/img/background-char/small-size/section-2.png'
 ---
 
 <h3>How it Works?</h3>
-<p>Going to your Favorite Sport or Outdoor Activity. Don't forget to bring along a bottle of BSI Medicated Spray in your bag.</p>
+<p>Just a few sprays and you get immediate relief without the need to massage the affected area.</p>
