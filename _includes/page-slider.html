@@ -20,49 +20,54 @@
 
     <div class="right-section">
         <ul class="slider visible-lg">
-            {% for pager in site.sectionPage %}
-            {% if pager.has-video == true %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
+            {% assign sorted-slideItem = site.sectionPage | sort: 'rank' %}
+            {% for pager in sorted-slideItem limit: 8 %}
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
+            {% endfor %}
+
+            {% for pager-video in sorted-slideItem | offset: 8 %}
+            <li class="item section-{{ pager-video.rank }}" data-description="{{ pager-video.content }}" data-color="{{ pager-video.color }}" style="background-color: {{ pager-video.color }};">
                 <div class="container video-container">
-                    <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
-                        <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
+                    <video id="video-{{ pager-video.video-id }}" class="video" controls poster="/img/video-poster/video-cover{{ pager-video.poster-id }}.jpg" style="height: auto; width: 100%;">
+                        <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager-video.video-id }}-wSubs.mp4">
                     </video>
                 </div>
             </li>
-            {% endif %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
             {% endfor %}
         </ul>
 
         <ul class="slider slider-medium hidden-lg visible-md visible-sm visible-xs">
-            {% for pager in site.sectionPage %}
-            {% if pager.has-video == true %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
-                <div class="video-container">
-                    <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
-                        <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
+            {% assign sorted-slideItem = site.sectionPage | sort: 'rank' %}
+            {% for pager in sorted-slideItem limit: 8 %}
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
+            {% endfor %}
+
+            {% for pager-video in sorted-slideItem | offset: 8 %}
+            <li class="item section-{{ pager-video.rank }}" data-description="{{ pager-video.content }}" data-color="{{ pager-video.color }}" style="background-color: {{ pager-video.color }};">
+                <div class="container video-container">
+                    <video id="video-{{ pager-video.video-id }}" class="video" controls poster="/img/video-poster/video-cover{{ pager-video.poster-id }}.jpg" style="height: auto; width: 100%;">
+                        <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager-video.video-id }}-wSubs.mp4">
                     </video>
                 </div>
             </li>
-            {% endif %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});"></li>
             {% endfor %}
         </ul>
 
         <ul class="slider slider-small hidden-lg hidden-md hidden-sm ">
-            {% for pager in site.sectionPage %}
-            {% if pager.has-video == true %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-color: {{ pager.color }};">
+            {% assign sorted-slideItem = site.sectionPage | sort: 'rank' %}
+            {% for pager in sorted-slideItem limit: 8 %}
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
+            {% endfor %}
+
+            {% for pager-video in sorted-slideItem | offset: 8 %}
+            <li class="item section-{{ pager-video.rank }}" data-description="{{ pager-video.content }}" data-color="{{ pager-video.color }}" style="background-color: {{ pager-video.color }};">
                 <div class="container video-container">
-                    <video id="video-{{ pager.video-id }}" class="video" controls style="height: auto; width: 100%;">
-                        <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager.video-id }}-wSubs.mp4">
+                    <video id="video-{{ pager-video.video-id }}" class="video" controls poster="/img/video-poster/video-cover{{ pager-video.poster-id }}.jpg" style="height: auto; width: 100%;">
+                        <source src="https://s3.amazonaws.com/bsi-videos/2016-05-19_BSI-Online-Plug-{{ pager-video.video-id }}-wSubs.mp4">
                     </video>
                 </div>
             </li>
-            {% endif %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-small }});"></li>
             {% endfor %}
-
         </ul>
 
         <div class="container demo visible-md visible-sm visible-xs">
