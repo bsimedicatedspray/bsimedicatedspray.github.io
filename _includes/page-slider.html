@@ -39,7 +39,7 @@
         <ul class="slider slider-medium hidden-lg visible-md visible-sm visible-xs">
             {% assign sorted-slideItem = site.sectionPage | sort: 'rank' %}
             {% for pager in sorted-slideItem limit: 8 %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-medium }});"></li>
             {% endfor %}
 
             {% for pager-video in sorted-slideItem | offset: 8 %}
@@ -56,7 +56,7 @@
         <ul class="slider slider-small hidden-lg hidden-md hidden-sm ">
             {% assign sorted-slideItem = site.sectionPage | sort: 'rank' %}
             {% for pager in sorted-slideItem limit: 8 %}
-            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-image }});"></li>
+            <li class="item section-{{ pager.rank }}" data-description="{{ pager.content }}" data-color="{{ pager.color }}" style="background-image: url({{ pager.background-small }});"></li>
             {% endfor %}
 
             {% for pager-video in sorted-slideItem | offset: 8 %}
