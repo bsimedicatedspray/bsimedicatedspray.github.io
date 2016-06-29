@@ -6,6 +6,5 @@ has-video: true
 poster-id: "3"
 ---
 
-<h3>WHO USES IT?</h3>
-<span>Professionals</span>
-<p>Staying at your desk for 8 hours a day can be a literal pain in the neck. BSI Medicated Spray must be in the First Aid Kit of any workplace.</p>
+
+<p>BSI Medicated Spray must be in the First Aid Kit of any workplace.</p>

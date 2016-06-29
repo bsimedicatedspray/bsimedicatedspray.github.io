@@ -6,5 +6,4 @@ has-video: true
 poster-id: "1"
 ---
 
-<h3>How it Works?</h3>
 <p>Going to your Favorite Sport or Outdoor Activity. Don't forget to bring along a bottle of BSI Medicated Spray in your bag.</p>
