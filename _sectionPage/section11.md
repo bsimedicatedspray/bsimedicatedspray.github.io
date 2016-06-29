@@ -1,9 +1,9 @@
 ---
-rank: 7
+rank: 11
 color: '#ea1639'
-background-image: '/img/background-char/section-7.jpg'
-background-medium: '/img/background-char/medium-size/section-7.jpg'
-background-small: '/img/background-char/small-size/section-7.jpg'
+video-id: "02"
+has-video: true
+poster-id: "2"
 ---
 
 <h3>WHO USES IT?</h3>
