@@ -3,7 +3,7 @@ rank: 10
 color: '#2466ab'
 video-id: "03"
 has-video: true
-poster-id: "3"
+poster-id: "2"
 ---
 
 <h3>WHO USES IT?</h3>
