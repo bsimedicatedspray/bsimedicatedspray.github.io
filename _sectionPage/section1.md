@@ -6,5 +6,5 @@ background-medium: '/img/background-char/medium-size/section-1.jpg'
 background-small: '/img/background-char/small-size/section-1.jpg'
 
 ---
-<h3>An instant pain relief for your muscle pains </h3>
+<h3>An Instant Relief for Muscle Pains </h3>
 <p>Buy now! Available at Mercury Drug, South Star Drug, Rose Pharmacy and Other leading Drugstores.</p>
