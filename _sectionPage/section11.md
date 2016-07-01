@@ -7,4 +7,4 @@ poster-id: "3"
 ---
 
 
-<p>BSI Medicated Spray must be in the First Aid Kit of any workplace.</p>
+<p>BSI Medicated Spray should be in the First Aid kit of any workplace.</p>
